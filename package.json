@@ -1,0 +1,18 @@
+{
+  "name": "ian-koans",
+  "version": "0.0.0",
+  "description": "A suite of helpful reminders of the quirks of JS.",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "bdd",
+    "koans",
+    "mocha",
+    "sinon",
+    "chai"
+  ],
+  "author": "Ian Sinnit <ian@iansinnott.com>",
+  "license": "MIT"
+}
