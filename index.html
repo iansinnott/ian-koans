@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JS Koans</title>
+  <link rel="stylesheet" href="./node_modules/mocha/mocha.css" type="text/css">
+</head>
+<body>
+
+  <div class="div" name="div"></div>
+  <div id="mocha"></div>
+
+  <!-- [ DEPENDENCIES] -->
+  <script src="./node_modules/mocha/mocha.js"></script>
+  <script src="./node_modules/chai/chai.js"></script>
+  <script src="./node_modules/sinon-browser-only/sinon.js"></script>
+  <script src="./node_modules/sinon-chai/lib/sinon-chai.js"></script>
+  <script>
+    // Setup Mocha
+    mocha.setup('bdd');
+
+    // Include both should and expect forms of assertions. Should is both assigned and called,
+    // as it must augment Object.prototype. Assigning it to a global allows the use of should
+    // as a starting point when testing for undefined values. Ex: var val; should.not.exist(value);
+    expect = chai.expect;
+    should = chai.should();
+  </script>
+
+  <!-- CONVENIENCE DEPENDENCIES -->
+  <script src="./node_modules/lodash/dist/lodash.js"></script>
+  <script src="./node_modules/zepto/zepto.min.js"></script>
+
+  <!-- [ SPEC ] -->
+  <script src="./spec/spec.js"></script>
+  <script type="text/javascript">mocha.run();</script>
+</body>
+</html>
